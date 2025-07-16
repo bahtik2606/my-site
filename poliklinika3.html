@@ -1,0 +1,467 @@
+<!DOCTYPE html> 
+<html lang="uz"> 
+<head>   
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-Oilaviy poliklinika</title>
+                <!--kasallik varaqasi -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="kasallik varaqasi style.css">
+
+    <link rel="stylesheet" href="poliklinika style 1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        /* Замонавий стрелканинг стили */
+        #scroll-button {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            font-size: 24px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+
+</head>
+<body>
+    
+<div class="marquee">
+    <span><i class="fas fa-cogs"></i> Sayt sinov rejimida ishlayapti! </span>
+</div>
+
+<header>
+        <div class="header-container">
+            <!-- Chap taraf (Logo va matn) -->
+            <div class="poliklinika-header">
+                <div class="logo">
+                    <img src="3-OP logo.jpg" alt="Poliklinika Logo">
+                </div>
+
+                <div class="text">
+                    <h3>Andijon viloyat sog'liqni saqlash boshqarmasi</h3>
+                    <h3>Andijon shahar tibbiyot birlashmasi</h3>
+                    <h1>3 - OILAVIY POLIKLINIKA</h1>
+                </div>
+            </div>
+    
+            <!-- Prezident nutqini chiqarish -->
+            <div class="quote-container">
+                <p class="quote">
+                    "Tibbiyot xodimlari bizning salomatligimiz posbonlaridir, 
+                    ularga xalq ishonishi, ular esa xalqni ishontira olishi kerak." 
+                    <br><span class="author">- Sh.M. Mirziyoyev</span>
+                </p>
+            </div>
+    
+            <!-- O'ng taraf (Ishonch telefoni) -->
+            <div class="ishonch-telefon">
+                <div class="phone-icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="phone-text">
+                    <h3>Ishonch telefoni</h3>
+                    <a href="tel:+998742253527">+998(74) 225-3527</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="#hero"><i class="fas fa-home"></i> Poliklinika faoliyatidan</a></li>
+            <li><a href="#services"><i class="fas fa-stethoscope"></i> Xizmatlar</a></li>
+            <li><a href="#doctors"><i class="fas fa-user-md"></i> Shifokorlar</a></li>
+            <li><a href="#online-qabul"><i class="fas fa-laptop-medical"></i> Onlayn qabul</a></li>
+            <li><a href="#kasallik-varaqlari"><i class="fas fa-file-medical"></i> Kasallik varaqasi</a></li>
+            <li><a href="#news"><i class="fas fa-newspaper"></i> Buyruqlar va yangiliklar</a></li>
+            <li><a href="#medicines"><i class="fas fa-pills"></i> Dorilar va Tavsiyalar </a></li>
+            <li><a href="#contact"><i class="fa-solid fa-location-dot"></i> Bog'lanish </a></li>
+        </ul>
+    </nav>
+
+<!-- Hero Section (Video + Flayer) -->
+<section id="hero" class="hero">
+    <!-- Chap tomonda ikkita video -->
+    <div class="hero-video">
+        <div class="video-container">
+            <video autoplay muted loop class="small-video">
+                <source src="OP.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop class="small-video">
+                <source src="medhub.uz.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <!-- O‘ng tomonda flayer -->
+    <div class="hero-flayer">
+        <img src="flayer.jpg" alt="Poliklinika flayeri">
+    </div>
+</section>
+
+<!-- Xizmatlar Bo'limi -->
+<section id="services" class="section">
+    <h2>Xizmatlar</h2>
+    <div class="services-list">
+        <div class="service-card">
+            <i class="fas fa-user-md"></i>
+            <h3><u>Oilaviy shifokorlar ko'ruvi</h3></u>
+            <h3>- Amaliyotchi va patronaj hamshiralar</h3>
+            <h3>- Uydagi ko'ruvlar</h3>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-user-nurse"></i>
+            <u><h3>Tor soha mutaxassislari ko'ruvi</h3></u>
+            <h3> - Xirurg, kardiolog, okulist, nevropatolog, endokrinolog, otoloringolog, stomatolog, ginekolog</h3>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-heart-pulse"></i>
+            <u><h3>Instrumental tekshiruvlar</h3></u>  
+            <h3>- Rentgen</h3>
+            <h3>- UZI</h3> 
+            <h3>- EKG</h3>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-hands"></i>
+            <u><h3>Fizioterapiya va massaj</h3></u>
+            <h3> - Solyuks, Tubus, Aerozol, Darsanval</h3>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-vials"></i>
+            <u><h3>Laboratoriya tahlillari</h3></u>
+            <h3>- Qon tahlili, Siydik tahlili, bioximik tekshiruvlar</h3>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-syringe"></i>
+            <i class="fas fa-hospital-user"></i>
+            <u><h3>Emlash va Vaksinatsiya</h3></u>
+            <u><h3> Kunduzgi shifoxona </h3></u>
+        </div>
+    </div>
+</section>
+
+<!-- Shifokorlar Bo'limi -->
+<section id="doctors" class="section">
+    <h2 class="section-title">Shifokorlar</h2>
+    <div class="doctor-container">
+        <button id="prevBtn" class="scroll-btn">‹</button>
+        <div class="doctor-row">
+            <div class="doctor-card">
+                <img src="Isakova D_Osh.jpg" alt="Isakova D_Osh">
+                <div class="doctor-info">
+                    <h3>Isakova D</h3>
+                    <p class="specialty"><b>Oilaviy shifokor</b></p>
+                    <button class="btn" onclick="location.href='#online-qabul'">Qabulga yozilish</button>
+                </div>
+            </div>
+            <div class="doctor-card">
+                <img src="Ergashova O_Osh.jpg" alt="Ergashova O_Osh">
+                <div class="doctor-info">
+                    <h3>Ergashova O</h3>
+                    <p class="specialty"><b>Oilaviy shifokor</b></p>
+                    <button class="btn" onclick="location.href='#online-qabul'">Qabulga yozilish</button>
+                </div>
+            </div>
+            <div class="doctor-card">
+                <img src="Tashpulatova D_Osh.jpg" alt="Tashpulatova D">
+                <div class="doctor-info">
+                    <h3>Tashpulatova D</h3>
+                    <p class="specialty"><b>Oilaviy shifokor</b></p>
+                    <button class="btn" onclick="location.href='#online-qabul'">Qabulga yozilish</button>
+                </div>
+            </div>
+            <div class="doctor-card">
+                <img src="Musayeva Y_Osh.jpg" alt="Musayeva Y_Osh">
+                <div class="doctor-info">
+                    <h3>Musayeva Yo_Osh</h3>
+                    <p class="specialty"><b>Oilaviy shifokor</b></p>
+                    <button class="btn" onclick="location.href='#online-qabul'">Qabulga yozilish</button>
+                </div>
+            </div>
+            <div class="doctor-card">
+                <img src="Egamberdieva R_Osh.jpg" alt="Egamberdieva R">
+                <div class="doctor-info">
+                    <h3>Egamberdieva R</h3>
+                    <p class="specialty"><b>Oilaviy shifokor</b></p>
+                    <button class="btn" onclick="location.href='#online-qabul'">Qabulga yozilish</button>
+                </div>
+            </div>
+            <div class="doctor-card">
+                <img src="Burundukova F_Osh.jpg" alt="Burundukova F">
+                <div class="doctor-info">
+                    <h3>Burundukova F</h3>
+                    <p class="specialty"><b>Oilaviy shifokor</b></p>
+                    <button class="btn" onclick="location.href='#online-qabul'">Qabulga yozilish</button>
+                </div>
+            </div>
+            <div class="doctor-card">
+                <img src="Nuritdinov D_Osh.jpg" alt="Nuritdinov D_Osh">
+                <div class="doctor-info">
+                    <h3>Nuritdinov D_Osh</h3>
+                    <p class="specialty"><b>Oilaviy shifokor</b></p>
+                    <button class="btn" onclick="location.href='#online-qabul'">Qabulga yozilish</button>
+                </div>
+            </div>
+            <div class="doctor-card">
+                <img src="Ergasheva N_ginekolog.jpg" alt="Ergasheva N_ginekolog">
+                <div class="doctor-info">
+                    <h3>Ergasheva N</h3>
+                    <p class="specialty"><b>Ginekolog</b></p>
+                    <button class="btn" onclick="location.href='#online-qabul'">Qabulga yozilish</button>
+                </div>
+            </div>
+            <div class="doctor-card">
+                <img src="Muminova D_ginekolog.jpg" alt="Muminova D_ginekolog">
+                <div class="doctor-info">
+                    <h3>Muminova D</h3>
+                    <p class="specialty"><b>Ginekolog</b></p>
+                    <button class="btn" onclick="location.href='#online-qabul'">Qabulga yozilish</button>
+                </div>
+            </div>
+            <div class="doctor-card">
+                <img src="Khalilova N_ginekolog.jpg" alt="Khalilova N_ginekolog">
+                <div class="doctor-info">
+                    <h3>Khalilova N</h3>
+                    <p class="specialty"><b>Ginekolog</b></p>
+                    <button class="btn" onclick="location.href='#online-qabul'">Qabulga yozilish</button>
+                </div>
+            </div>
+            <div class="doctor-card">
+                <img src="Uktamova N_okulist.jpg" alt="Uktamova N_okulist">
+                <div class="doctor-info">
+                    <h3>Uktamova N</h3>
+                    <p class="specialty"><b>Okulist</b></p>
+                    <button class="btn" onclick="location.href='#online-qabul'">Qabulga yozilish</button>
+                </div>
+            </div>
+            <div class="doctor-card">
+                <img src="Khujaeva N_okulist.jpg" alt="Khujaeva N_okulist">
+                <div class="doctor-info">
+                    <h3>Khujaeva N</h3>
+                    <p class="specialty"><b>Okulist</b></p>
+                    <button class="btn" onclick="location.href='#online-qabul'">Qabulga yozilish</button>
+                </div>
+            </div>
+            <div class="doctor-card">
+                <img src="Mamadaliev M_stomatolog.jpg" alt="Mamadaliev M_stomatolog">
+                <div class="doctor-info">
+                    <h3>Mamadaliev M</h3>
+                    <p class="specialty"><b>Stomatolog</b></p>
+                    <button class="btn" onclick="location.href='#online-qabul'">Qabulga yozilish</button>
+                </div>
+            </div>
+            <div class="doctor-card">
+                <img src="Abdurakhimova D_kardiolog.jpg" alt="Abdurakhimova D_kardiolog">
+                <div class="doctor-info">
+                    <h3>Abdurakhimova D</h3>
+                    <p class="specialty"><b>Kardiolog</b></p>
+                    <button class="btn" onclick="location.href='#online-qabul'">Qabulga yozilish</button>
+                </div>
+            </div>
+            <div class="doctor-card">
+                <img src="Khamdamova Z_otoloringolog.jpg" alt="Khamdamova Z_otoloringolog">
+                <div class="doctor-info">
+                    <h3>Khamdamova Z</h3>
+                    <p class="specialty"><b>Otolaringolog</b></p>
+                    <button class="btn" onclick="location.href='#online-qabul'">Qabulga yozilish</button>
+                </div>
+            </div>
+            <div class="doctor-card">
+                <img src="Sabirova M_nevropaatolog.jpg" alt="Sabirova M_nevropaatologt">
+                <div class="doctor-info">
+                    <h3>Sabirova M</h3>
+                    <p class="specialty"><b>Nevropatolog</b></p>
+                    <button class="btn" onclick="location.href='#online-qabul'">Qabulga yozilish</button>
+                </div>
+            </div>
+            <div class="doctor-card">
+                <img src="Mansurov M_Xirurg.jpg" alt="Mansurov M_Xirurg">
+                <div class="doctor-info">
+                    <h3>Mansurov M</h3>
+                    <p class="specialty"><b>Xirurg</b></p>
+                    <button class="btn" onclick="location.href='#online-qabul'">Qabulga yozilish</button>
+                </div>
+            </div>
+            <div class="doctor-card">
+                <img src="Mirgozieva B-laborant_vr.jpg" alt="Mirgozieva B-laborant_vr">
+                <div class="doctor-info">
+                    <h3>Mirgozieva B</h3>
+                    <p class="specialty"><b>Laborant</b></p>
+                    <button class="btn" onclick="location.href='#online-qabul'">Qabulga yozilish</button>
+                </div>
+            </div>
+        </div>
+        <button id="nextBtn" class="scroll-btn"></button>
+    </div>
+</section>
+
+<script>
+    document.getElementById('prevBtn').addEventListener('click', function() {
+        document.querySelector('.doctor-row').scrollBy({
+            left: -300,
+            behavior: 'smooth'
+        });
+    });
+
+    document.getElementById('nextBtn').addEventListener('click', function() {
+        document.querySelector('.doctor-row').scrollBy({
+            left: 300,
+            behavior: 'smooth'
+        });
+    });
+</script>
+
+<!-- Onlayn Qabul (Tibbiy Axborot Tizimi) -->
+<section id="online-qabul" class="section">
+    <h2>🩺 Tibbiy Axborot Tizimi</h2>
+    <form action="https://mis.dmed.uz/auth/login" method="get" target="_blank">
+        <label for="name">Familiya va Ism:</label>
+        <input type="text" id="name" name="name" placeholder="Familiya va Ismingiz" required>
+        <label for="phone">Telefon:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Telefon raqamingiz" required>
+        <label for="date">Qabul Sanasi:</label>
+        <input type="date" id="date" name="date" required>
+        <button type="submit" class="btn btn-large">
+            <b>Yuborish</b> <i class="fas fa-download"></i>
+        </button>    
+    </form>
+</section>
+
+<!-- Kasallik varaqasi tugmasi -->
+<script>
+    function openServiceLink() {
+        window.open("https://my.gov.uz/uz/service/855", "_blank");
+    }
+</script>
+
+<div class="container"  id="kasallik-varaqlari">
+    <div class="header">
+        <ul class="info-list">
+        <h1>📄 Kasallik Varaqasi</h1>
+    </div>
+    <ul class="info-list">
+        <b><li>💻 O‘zbekiston Respublikasi Prezidentining 2023-yil 28-fevraldagi PF-27-son Farmoniga muvofiq, vaqtincha mehnatga layoqatsizlik varaqlari elektron shaklga o‘tkazilgan.</li></b>
+        <b><li>🏥 Tibbiyot muassasalari tomonidan fuqarolarning kasalligi sabab beriladigan vaqtincha mehnatga layoqatsizlik varaqlarini olish uchun muassasalarga tashrif buyurish shart emas.</li></b>
+        <b><li>🔵 Shunchaki, <a href="https://my.gov.uz" target="_blank">my.gov.uz</a> portali orqali “Sog‘liqni saqlash” bo‘limidan kerakli xizmatni tanlab, mehnatga layoqatsizlik varaqlarini onlayn yuklab olish kifoya.</li></b>
+        <b><li>⚫ Xizmatdan foydalanishda hech qanday hujjat talab etilmaydi. Shuningdek, mutlaqo bepul va qulay!</li></b>
+    </ul>
+    <b><p>🎥 Video-Qo‘llanma: <a href="https://youtu.be/ydGTu7ZAsXc" target="_blank">Ko‘rish</a></p></b>
+    <button type="submit" class="btn btn-large" onclick="openServiceLink()">
+        <b>Yuborish</b> <i class="fas fa-download"></i>
+    </button>    
+</div>
+</div>
+
+<!-- Font Awesome kutubxonasini qo‘shish -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<!-- Buyruqlar Bo'limi -->
+<section id="news" class="section">
+    <h2 class="section-title">Buyruqlar va yangiliklar</h2>
+    <div class="news-container">
+        <div class="news-card">
+            <div class="news-links">
+                <a href="https://gov.uz/oz/ssv/sections/prezidentning-farmon-qaror-va-farmoyishlari" target="_blank" class="news-btn">
+                    <i class="fas fa-landmark"></i> 
+                    <b>Prezident farmonlari</b>
+                </a>
+                <a href="https://gov.uz/oz/ssv/sections/vazirlik-buyruqlar" target="_blank" class="news-btn">
+                    <i class="fas fa-file-alt"></i> 
+                    <b>SSV buyruqlari</b>
+                </a>
+                <a href="https://gov.uz/oz/ssv/news/news" target="_blank" class="news-btn">
+                    <i class="fas fa-newspaper"></i> 
+                <b>Yangiliklar</b>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Dorilar Bo'limi -->
+<section id="medicines" class="section">
+    <div class="infographic-container" style="text-align: center; margin-bottom: 20px;">
+        <img src="infographic.jpg" alt="Health Infographic" style="max-width: 100%; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1);">
+    </div>
+    <h2>Dorilar va Tavsiyalar</h2>
+    <div class="medicine-list">
+        <div class="medicine-card">
+            <div class="news-links">
+                <a href="https://osonapteka.uz/" target="_blank" class="news-btn">
+                    <i class="fas fa-pills"></i>
+                    <b>Dorilar</b>
+                </a>
+                <a href="https://gov.uz/oz/ssv/feedback" target="_blank" class="news-btn">
+                    <i class="fas fa-user-md"></i>
+                    <b>Tibbiy-psixologik maslahat</b>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Bog'lanish Bo'limi -->
+<section id="contact" class="section" style="max-width: 600px; margin: auto; padding: 20px; background: #f9f9f9; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);">
+    <h2 style="text-align: center; color: #ffffff;"> Manzil va Bog'lanish</h2>
+    <div class="contact-info" style="font-size: 18px; color: #444; line-height: 1.8;">
+        <p><i class="fa-solid fa-phone" style="color: #ff00dd;"></i> 
+            <a href="tel:+998742253527" target="_blank" style="text-decoration: none; color: #ff0095;">+(99874) 225-3527</a>
+        </p>
+        <p><i class="fa-solid fa-envelope" style="color: #ff6600;"></i> 
+            <a href="mailto:and.sh.op3@ssv.uz" target="_blank" style="text-decoration: none; color: #ff6600;">and.sh.op3@ssv.uz</a>
+        </p>
+        <p><i class="fa-brands fa-telegram" style="color: #0088cc;"></i> 
+            <a href="https://t.me/poliklinika3" target="_blank" style="text-decoration: none; color: #0088cc;">@3_op_rasmiy</a>
+        </p>
+        <p><i class="fa-solid fa-clock" style="color: #28a745;"></i> 
+            <b>Dushanba - Shanba: 08:00 - 18:00</b>
+        </p>
+        <p>
+            <i class="fa-solid fa-location-dot" style="color: #dc3545;"></i>
+            <a href="https://maps.google.com/maps?q=40.797922,72.345941&ll=40.797922,72.345941&z=16" target="_blank" 
+               style="text-decoration: none; font-weight: bold; color: #dc3545;">Andijon shahar, Cho'ponshoh #42a
+            </a>
+        </p>
+    </div>
+</section>
+    <footer>
+        <p> 2025 yil. Web Developer - Bahtiyorbek Rustamov At-servis 2-kurs 2-guruh </p>
+    </footer>
+ 
+    <button id="scroll-button">⇵</button>
+
+    <script>
+        const scrollButton = document.getElementById('scroll-button');
+        let scrollToTop = false;
+
+        // Ҳаракатланишни бошқариш
+        scrollButton.addEventListener('click', () => {
+            if (scrollToTop) {
+                window.scrollTo({
+                    top: document.body.scrollHeight,
+                    behavior: 'smooth'
+                });
+                scrollToTop = false;
+            } else {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+                scrollToTop = true;
+            }
+        });
+    </script>
+   </body>
+    </html>
+
+    

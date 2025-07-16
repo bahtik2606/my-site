@@ -1,0 +1,582 @@
+/* Umumiy stil  1- */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #239af0;
+    color: #333;
+}
+
+/* HEADER container 2- */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 20px;
+    background: linear-gradient(to right, #007bff, #00bfff);
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+}
+
+/* Logo va matn 3- */
+.poliklinika-header {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover img {
+    transform: scale(1.1);
+}
+
+/* Umumiy matnni zamonaviy ko'rinishda sozlash */
+.text {
+    text-align: left; /* Har bir qatorni chapga hizalash */
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.1); /* Yengil fon */
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    color: white;
+    backdrop-filter: blur(8px); /* Fonni blur qilish */
+    transition: all 0.5s ease-in-out; /* Barcha o'zgarishlarga animatsiya */
+    cursor: pointer; /* Kursor ko'rinishini o'zgartirish */
+}
+
+/* Text hover holati uchun effekt */
+.text:hover {
+    background: rgba(255, 255, 255, 0.2); /* Shaffof fon rangi */
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.3); /* Ko'proq soyalar */
+    transform: scale(1.05); /* Kichik zoom effekt */
+}
+
+/* Sub-heading (kichik sarlavha) */
+.text h3 {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #f0f4f8;
+    margin-bottom: 12px;
+    transition: all 0.4s ease;
+}
+
+/* Asosiy sarlavha hover holati */
+.text h1 {
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: linear-gradient(45deg, #ffffff, #ffffff); /* Gradient matn */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 10px;
+    transition: all 0.4s ease;
+}
+
+/* Prezident nutqi 4- */
+.quote-container {
+    flex: 1;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.quote {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0860c5;
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
+    font-family: 'Arial', sans-serif;
+}
+
+.author {
+    font-size: 18px;
+    color: #0860c5;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Ishonch telefoni 5- */
+.ishonch-telefon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 12px 18px;
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+}
+
+.ishonch-telefon:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+
+/* Telefon ikonka */
+.phone-icon i {
+    font-size: 24px;
+    color: white;
+    background: #007bff;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 10px rgba(0, 123, 255, 0.4);
+    transition: 0.3s;
+}
+
+.ishonch-telefon:hover .phone-icon i {
+    background: #0056b3;
+    box-shadow: 0px 0px rgba(0, 86, 179, 0.6);
+}
+.phone-text {
+    text-align: left; /* Chapga hizalash */
+    padding-left: 0px; /* Matnni o‘ngga surish */
+}
+
+/* Matn uslubi */
+.phone-text h3 {
+    margin: 0;
+    font-size: 20px;
+    color: white;
+}
+
+.phone-text a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.phone-text a:hover {
+    color: #0734ff;
+}
+
+/* Menyu asosiy o‘rnatmalar 6- */
+.menu {
+    width: 100%;
+    background-color: #007bff;
+    padding: 0px 0;
+    text-align: center;
+}
+
+/* Menyu elementlari */
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Havolalar va ikonkalarga stil */
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Tugmalar ustiga kursor bosilganda animatsiya */
+.menu ul li a:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Ikonka o‘lchami */
+.menu ul li a i {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+/* Ikonka harakati */
+.menu ul li a:hover i {
+    transform: rotate(360deg);
+}
+
+/* 📌 Asosiy Hero Sektsiyasi 7+ */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 35vh;
+    background: #0f64e4;
+    padding: 0px;
+    gap: 100px;
+}
+
+/* 🎥 Video va Flayer Sektsiyasi 8+*/
+.hero {
+    display: flex;
+    justify-content: center; /* Markazga joylash */
+    align-items: center;
+    gap: 20px; /* Video va flayer orasidagi masofa */
+    flex-wrap: wrap; /* Kichik ekranlarda moslashish */
+    padding: 0px;
+    text-align: center;
+}
+
+/* 🎥 Videolar 9+*/
+.hero-video {
+    display: flex;
+    gap: 50px; /* Videolar orasidagi masofa */
+}
+
+.video-container video {
+    width: 500px; /* Videolarni moslashtirish */
+    height: 230px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.video-container video:hover {
+    transform: scale(1.05);
+}
+
+/* 🖼 Flayer 10+*/
+.hero-flayer img {
+    width: 500px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero-flayer img:hover {
+    transform: scale(1.05);
+}
+
+/* 📱 xizmatlar 12+  */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+}
+
+.service-card {
+    width: 200px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    color: white;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.service-card i {
+    font-size: 50px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.service-card h3 {
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+.service-card h3, .service-card h4 {
+    margin: 4px 2; /* Yuqoridan va pastdan 5px masofa qoldirish */
+    line-height: 1.0; /* Qatorlar orasidagi masofani kamaytirish */
+}
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.service-img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Shifokorlar bo'limi 13+ */
+
+.doctor-container {
+    position: relative;
+    max-width: 100%;
+    margin: 30px auto;
+    padding: 0 50px;
+}
+
+/* Силжиш тугмалари учун стил */
+.scroll-btn {
+    background: rgba(0, 123, 255, 0.9);
+    color: white;
+    border: none;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+/* Тугмаларнинг иконкалари учун */
+#prevBtn::before {
+    content: "❮"; /* Chap strelka */
+}
+
+#nextBtn::before {
+    content: "❯"; /* O'ng strelka */
+}
+
+/* Тугмаларнинг жойлашуви */
+#prevBtn {
+    left: 0;
+}
+
+#nextBtn {
+    right: 0;
+}
+
+/* Шифокорлар қатори учун стил */
+.doctor-row {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 20px 0;
+    scrollbar-width: none; /* Firefox учун */
+    -ms-overflow-style: none; /* IE ва Edge учун */
+}
+
+.doctor-row::-webkit-scrollbar {
+    display: none; /* Chrome ва Safari учун */
+}
+
+/* Шифокор карталари учун стил */
+.doctor-card {
+    flex: 0 0 auto;
+    width: 180px;
+    text-align: center;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f5f5f5, #ffffff);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+
+.doctor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.doctor-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #e0f2fe;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.doctor-card:hover img {
+    border-color: #38bdf8;
+    transform: scale(1.05);
+}
+
+.doctor-info h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.specialty {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.btn {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    transform: scale(1.05);
+}
+
+
+/* Tugmalar */
+.news-links {
+    display: flex;
+    flex-wrap: nowrap; /* 1 qator qilib qo‘yish */
+    gap: 45px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.news-btn {
+    display: flex;
+    flex-direction: column; /* Ikonka matn tepasida bo‘ladi */
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #00ccff, #0056b3);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    width: 250px; /* Har bir tugma bir xil o‘lchamda bo‘lsin */
+    text-align: center; /* Matnni markazga olish */
+    transition: background 0.3s ease-in-out;
+}
+
+.news-btn i {
+    font-size: 30px; /* Ikonkani kattalashtirish */
+}
+
+.news-btn:hover {
+    background: #004eb5;
+}
+
+/* SECTIONS (Бўлимлар) */
+.section {
+    padding: 5px 50px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 35px;
+    color: white  /*zagolovka ranglari */
+}
+
+
+/* FOOTER (Пастки қисм) */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 1px;
+}
+
+.contact-info {
+    max-width: 400px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    font-size: 22px;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* sayt sinov rejimida .... */
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    background: linear-gradient(45deg, #ff0000, #ff7300);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 2px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.marquee span {
+    display: inline-block;
+    padding-left: 50%;
+    animation: marquee 20s linear infinite;
+}
+
+/* Harakat animatsiyasi */
+@keyframes marquee {
+    0% { transform: translateX(50%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* 📱 Mobil versiya 11+*/
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-video {
+        flex-direction: column;
+    }
+
+    .video-container video {
+        width: 100%;
+        height: 200px;
+    }
+
+    .hero-flayer img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+

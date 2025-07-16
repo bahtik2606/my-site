@@ -1,0 +1,126 @@
+/* Umumiy sozlamalar */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Har bir bo‘lim umumiy dizayni */
+.section {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Sarlavhalar */
+h2 {
+    background: linear-gradient(to right, #007bff, #052079);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 22px;
+}
+
+/* Form dizayni */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+form label {
+    font-weight: bold;
+    text-align: left;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* yuborish va kasallik varaqalarini olish tugmasi uchun */
+
+button, .btn {
+    background: linear-gradient(135deg, #00ccff, #0056b3);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+
+button:hover, .btn:hover {
+    background: #004eb5;
+}
+
+/* Kasallik varaqasi tugmasi */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background: #0052cc;
+    color: white;
+    padding: 0px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.info-list {
+    text-align: left;
+    padding: 0;
+}
+
+.info-list li {
+    list-style: none;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+a {
+    color: #0052cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.download-btn {
+    background: #0052cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    background: #003d99;
+}
+
